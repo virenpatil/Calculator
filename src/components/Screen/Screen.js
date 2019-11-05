@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Screen.css';
+
 import Button from '../Button/Button';
 import { keypadKeys } from '../../utils/BasicMode';
 

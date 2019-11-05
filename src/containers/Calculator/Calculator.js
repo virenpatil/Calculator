@@ -6,7 +6,7 @@ import Screen from '../../components/Screen/Screen';
 class Calculator extends Component {
     render() {
         return (
-            <div>
+            <div className="calculator">
                 <Result {...this.props}/>
                 <Screen {...this.props}/>
             </div>

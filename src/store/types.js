@@ -14,3 +14,5 @@ export const SQUARE_ROOT = 'SQUARE_ROOT';
 export const CLEAR = 'CLEAR';
 
 export const EVALUATE_EXPRESSION = 'EVALUATE_EXPRESSION';
+
+export const SET_EXPRESSION = 'SET_EXPRESSION';
