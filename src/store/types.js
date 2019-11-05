@@ -16,3 +16,7 @@ export const CLEAR = 'CLEAR';
 export const EVALUATE_EXPRESSION = 'EVALUATE_EXPRESSION';
 
 export const SET_EXPRESSION = 'SET_EXPRESSION';
+
+export const MINUS =  'MINUS';
+
+export const MODE =  'MODE';

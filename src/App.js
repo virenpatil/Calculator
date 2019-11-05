@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 
-import { clear, addition, subtraction, multification, division, evaluateExpression, square, squareRoot, calculate } from './store/action/action';
+import { mode, clear,minus, evaluateExpression, square, squareRoot, calculate } from './store/action/action';
 import Calculator from './containers/Calculator/Calculator';
 
 
@@ -18,6 +18,7 @@ class App extends Component {
 const mapStateToProps = state => {
   return {
     expression: state.expression,
+    mode : state.mode,
     total: state.total
   };
 };
@@ -27,12 +28,10 @@ const mapDispatchToProps = dispatch => {
     calculate: buttonKey => { dispatch(calculate(buttonKey)); },
     clear: () => { dispatch(clear()); },
     evaluate: () => { dispatch(evaluateExpression()); },
-    add: () => { dispatch(addition()); },
-    sub: () => { dispatch(subtraction()); },
-    mul: () => { dispatch(multification()); },
-    div: () => { dispatch(division()); },
     square: () => { dispatch(square()); },
-    squareRoot: () => { dispatch(squareRoot()); }
+    squareRoot: () => { dispatch(squareRoot()); },
+    minus: () => { dispatch(minus())},
+    changeMode: () => { dispatch(mode())}
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(App);

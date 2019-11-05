@@ -1,9 +1,14 @@
-import React from'react';
+import React from 'react';
 import './Result.css';
 export default (props) => {
-    return(
-        <div className="display">
-            {props.total}
+    return (
+        <div>
+            <div className="display">
+                {props.expression}
+            </div>
+            <div className="display">
+                {props.total}
+            </div>
         </div>
     )
 }

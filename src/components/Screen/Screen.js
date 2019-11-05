@@ -13,19 +13,7 @@ export default class Screan extends Component {
         break;
       case "=":
         this.props.evaluate();
-        break;
-      case "+":
-        this.props.add();
-        break;
-      case "-":
-        this.props.sub();
-        break;
-      case "*":
-        this.props.mul();
-        break;
-      case "/":
-        this.props.div();
-        break;
+        break;    
       default:
         this.props.calculate(key);
         break;
