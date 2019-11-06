@@ -4,9 +4,6 @@ export default (props) => {
     return (
         <div>
             <div className="display">
-                {props.expression}
-            </div>
-            <div className="display">
                 {props.total}
             </div>
         </div>

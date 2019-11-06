@@ -1,6 +1,6 @@
 .display{
-    border: solid 2px black;
-    padding: 2px;
-    width: 245px;
+    border: solid 1px black;
+    width: 249px;
     text-align: right;
+    height: 30px;
 }

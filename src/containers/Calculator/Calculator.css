@@ -1,4 +1,5 @@
 .calculator-board{
-    align-items: center;
-    flex: 10px;
+    margin: auto;
+    width: 50vh;
+    padding: 10px;
 }

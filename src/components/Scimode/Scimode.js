@@ -26,12 +26,12 @@ export default class Scimode extends Component {
 
     render() {
         let display = < Button
-        key={'SciMode'}
-        onButtonClick={() =>{
-            this.props.changeMode();
-        }}
-        buttonKey={'Sci'}
-    />;
+            key={'SciMode'}
+            onButtonClick={() => {
+                this.props.changeMode();
+            }}
+            buttonKey={'Sci'}
+        />;
         console.log('mode -->', this.props.mode);
         if (this.props.mode !== 'basic') {
             display = this.kays.map(key => (
@@ -45,7 +45,7 @@ export default class Scimode extends Component {
 
 
         return (
-            <div>
+            <div className="sci-mode-btn">
                 {display}
             </div>
         );
